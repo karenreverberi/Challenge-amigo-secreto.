@@ -1,0 +1,40 @@
+!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="titulo">
+        <div class="tituloPocision">
+        <h1 class="fontH1">Amigo Secreto</h1>
+        <img class="imagen" src="amigo.png" alt="Png de imagen">
+        </div>
+    </header>
+
+    <div class="input">
+        <div class="input-box">
+            <input class="inputDiseño" id="inputNombre" type="text" placeholder="Escribe un nombre">
+            <button class="buttonDiseño" id="btnAñadir" onclick="agregarAmigo()">Añadir</button>
+        </div>
+    </div>
+    <button class="btnSortear" id="btnSortear" onclick="sortear()">Sortear amigos</button>
+
+    <div class="cajaLista">
+        <h2 class="cajaHead" id="tituloLista">Lista de amigos</h2>
+       <div class="cajaListaAmigos">
+            <section class="listaAmigos">
+                <ol id="listado"></ol>
+            </section>
+            <section>
+                <button class="btnResetCss" id="btnReset" onclick="reiniciarJuego()" style="display: none;">Reiniciar juego</button>
+            </section>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
